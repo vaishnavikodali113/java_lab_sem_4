@@ -1,5 +1,6 @@
 import java.util.*;
 
+// Class to manage student operations such as adding, searching, updating, and deleting students.
 public class StudentOperations {
     private ArrayList<Student> students;
 
