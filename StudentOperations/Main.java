@@ -49,7 +49,7 @@ public class Main {
                         System.out.println("Student not found.");
                         break;
                     }
-                 case 4:
+                 case 4:   // Search by Name
                     System.out.print("Enter Name to search: ");
                     Student foundByName = operations.searchByName(scanner.nextLine());
                     if (foundByName != null) {
