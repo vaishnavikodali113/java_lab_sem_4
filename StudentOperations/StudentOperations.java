@@ -36,6 +36,7 @@ public class StudentOperations {
         return null;
     }
 
+    // Method to search for a student by name
     public Student searchByName(String name) {
          for (Student student : students) {
              if (student.getName().equalsIgnoreCase(name)) {
