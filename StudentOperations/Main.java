@@ -60,3 +60,22 @@ public class Main {
                         break;
                     }
 
+                 case 5:
+                     System.out.print("Enter PRN to update: ");
+                     long updatePRN = scanner.nextLong();
+                     scanner.nextLine();
+                     System.out.print("Enter new Name: ");
+                     String newName = scanner.nextLine();
+                     System.out.print("Enter new Department: ");
+                     String newDept = scanner.nextLine();
+                     System.out.print("Enter new Batch: ");
+                     String newBatch = scanner.nextLine();
+                     System.out.print("Enter new CGPA: ");
+                     double newCgpa = scanner.nextDouble();
+                    if (operations.updateStudent(updatePRN, newName, newDept, newBatch, newCgpa)) {
+                        System.out.println("Student updated successfully.");
+                    }
+                    else {
+                        System.out.println("Student not found.");
+                        break;
+                    }
