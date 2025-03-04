@@ -1,10 +1,9 @@
 import java.util.*;
 
 public class Main {
-    public static void main(String args[]) {
-        Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         StudentOperations operations = new StudentOperations();
-        String choice;
 
         do {
             System.out.println("\nEnter student details:");
