@@ -15,6 +15,7 @@ public class Student {
         this.cgpa = cgpa;
     }
 
+    // Getter and setter methods for student attributes
     public String getName() { 
         return name; 
     }
