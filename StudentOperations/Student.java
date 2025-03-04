@@ -5,12 +5,12 @@ public class Student {
     private String batch;
     private double cgpa;
 
-    public Student(String name, int prn, String Dept, String Batch, double CGPA) {
+    public Student(String name, long prn, String dept, String batch, double cgpa) {
         this.name = name;
         this.prn = prn;
-	    this.Dept = Dept;
-	    this.Batch = Batch;
-	    this.CGPA = CGPA;
+        this.dept = dept;
+        this.batch = batch;
+        this.cgpa = cgpa;
     }
 
     public String getName() {
