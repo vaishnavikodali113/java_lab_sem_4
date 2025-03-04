@@ -1,3 +1,4 @@
+// Class representing a student with attributes such as name, PRN, department, batch, and CGPA.
 public class Student {
     private String name;
     private long prn;
