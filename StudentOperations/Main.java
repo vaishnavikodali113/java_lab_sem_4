@@ -40,15 +40,15 @@ public class Main {
                     break;
 
                  case 3:   // Search by PRN
-                     System.out.print("Enter PRN to search: ");
-                     Student foundByPRN = operations.searchByPRN(scanner.nextLong());
-                     if (foundByPRN != null) {
-                         foundByPRN.display();
-                     }
-                     else {
-                        System.out.println("Student not found.");
-                        break;
+                    System.out.print("Enter PRN to search: ");
+                    Student foundByPRN = operations.searchByPRN(scanner.nextLong());
+                    if (foundByPRN != null) {
+                        foundByPRN.display();
                     }
+                    else {
+                        System.out.println("Student not found.");
+                    }
+                    break;
                  case 4:   // Search by Name
                     System.out.print("Enter Name to search: ");
                     Student foundByName = operations.searchByName(scanner.nextLine());
@@ -57,38 +57,38 @@ public class Main {
                     }
                     else {
                         System.out.println("Student not found.");
-                        break;
                     }
+                    break;
 
                  case 5:   // Update student details
-                     System.out.print("Enter PRN to update: ");
-                     long updatePRN = scanner.nextLong();
-                     scanner.nextLine();
-                     System.out.print("Enter new Name: ");
-                     String newName = scanner.nextLine();
-                     System.out.print("Enter new Department: ");
-                     String newDept = scanner.nextLine();
-                     System.out.print("Enter new Batch: ");
-                     String newBatch = scanner.nextLine();
-                     System.out.print("Enter new CGPA: ");
-                     double newCgpa = scanner.nextDouble();
+                    System.out.print("Enter PRN to update: ");
+                    long updatePRN = scanner.nextLong();
+                    scanner.nextLine();
+                    System.out.print("Enter new Name: ");
+                    String newName = scanner.nextLine();
+                    System.out.print("Enter new Department: ");
+                    String newDept = scanner.nextLine();
+                    System.out.print("Enter new Batch: ");
+                    String newBatch = scanner.nextLine();
+                    System.out.print("Enter new CGPA: ");
+                    double newCgpa = scanner.nextDouble();
                     if (operations.updateStudent(updatePRN, newName, newDept, newBatch, newCgpa)) {
                         System.out.println("Student updated successfully.");
                     }
                     else {
                         System.out.println("Student not found.");
-                        break;
                     }
+                    break;
 
                 case 6:   // Delete student
-                     System.out.print("Enter PRN to delete: ");
-                     if (operations.deleteStudent(scanner.nextLong())) {
+                    System.out.print("Enter PRN to delete: ");
+                    if (operations.deleteStudent(scanner.nextLong())) {
                         System.out.println("Student deleted successfully.");
-                     }
-                    else {
-                         System.out.println("Student not found.");
-                         break;
                     }
+                    else {
+                        System.out.println("Student not found.");
+                    }
+                    break;
 
                 case 7:   // Exit program
                     System.out.println("Exiting program.");
