@@ -1,9 +1,9 @@
 public class Student {
     private String name;
     private long prn;
-    private String Dept;
-    private String Batch;
-    private double CGPA;
+    private String dept;
+    private String batch;
+    private double cgpa;
 
     public Student(String name, int prn, String Dept, String Batch, double CGPA) {
         this.name = name;
