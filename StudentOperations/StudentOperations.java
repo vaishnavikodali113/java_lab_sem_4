@@ -4,6 +4,7 @@ import java.util.*;
 public class StudentOperations {
     private ArrayList<Student> students;
 
+    // Constructor initializing the student list	
     public StudentOperations() {
         this.students = new ArrayList<>();
     }	
