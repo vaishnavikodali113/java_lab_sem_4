@@ -5,7 +5,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         StudentOperations operations = new StudentOperations();
 
-        while (true) {
+        while (true) {   // Display menu options
             System.out.println("\nMENU:");
             System.out.println("1. Add Student");
             System.out.println("2. Display Students");
