@@ -38,3 +38,15 @@ public class Main {
                  case 2:
                     operations.displayStudents();
                     break;
+
+                 case 3:
+                     System.out.print("Enter PRN to search: ");
+                     Student foundByPRN = operations.searchByPRN(scanner.nextLong());
+                     if (foundByPRN != null) {
+                         foundByPRN.display();
+                     }
+                    else {
+                        System.out.println("Student not found.");
+                        break;
+                    }
+            
