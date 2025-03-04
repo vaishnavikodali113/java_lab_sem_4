@@ -28,12 +28,12 @@ public class Student {
         this.prn = prn; 
     }
 
-    public String getDept() {
-        return Dept;
+    public String getDept() { 
+        return dept; 
     }
-
-    public void setDept(String Dept) {
-        this.Dept = Dept;
+    
+    public void setDept(String dept) { 
+        this.dept = dept; 
     }
 
     public String getBatch() {
