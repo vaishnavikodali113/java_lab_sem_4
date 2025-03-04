@@ -35,6 +35,6 @@ public class Main {
                     operations.addStudent(new Student(name, prn, dept, batch, cgpa));
                     break;
                 
-            case 2:
+                 case 2:
                     operations.displayStudents();
                     break;
