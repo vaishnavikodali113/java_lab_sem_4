@@ -45,8 +45,18 @@ public class Main {
                      if (foundByPRN != null) {
                          foundByPRN.display();
                      }
+                     else {
+                        System.out.println("Student not found.");
+                        break;
+                    }
+                 case 4:
+                    System.out.print("Enter Name to search: ");
+                    Student foundByName = operations.searchByName(scanner.nextLine());
+                    if (foundByName != null) {
+                        foundByName.display();
+                    }
                     else {
                         System.out.println("Student not found.");
                         break;
                     }
-            
+
