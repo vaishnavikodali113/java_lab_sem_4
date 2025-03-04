@@ -15,3 +15,6 @@ public class Main {
             System.out.println("6. Delete Student");
             System.out.println("7. Exit");
             System.out.print("Enter choice: ");
+
+            int choice = scanner.nextInt();
+            scanner.nextLine(); 
