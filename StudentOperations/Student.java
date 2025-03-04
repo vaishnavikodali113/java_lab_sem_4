@@ -44,12 +44,12 @@ public class Student {
         this.batch = batch; 
     }
 
-    public double getCGPA() {
-        return CGPA;
+    public double getCgpa() { 
+        return cgpa; 
     }
-
-    public void setCGPA(double CGPA) {
-        this.CGPA = CGPA;
+    
+    public void setCgpa(double cgpa) { 
+        this.cgpa = cgpa; 
     }
 
     public void display() {
