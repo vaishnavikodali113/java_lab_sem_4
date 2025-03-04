@@ -1,13 +1,14 @@
+
 import java.util.*;
 
 // Class to manage student operations such as adding, searching, updating, and deleting students.
 public class StudentOperations {
     private ArrayList<Student> students;
 
-    // Constructor initializing the student list	
+    // Constructor initializing the student list
     public StudentOperations() {
         this.students = new ArrayList<>();
-    }	
+    }
 
     // Method to add a student
     public void addStudent(Student student) {
@@ -38,16 +39,16 @@ public class StudentOperations {
 
     // Method to search for a student by name
     public Student searchByName(String name) {
-         for (Student student : students) {
-             if (student.getName().equalsIgnoreCase(name)) {
-                 return student;
+        for (Student student : students) {
+            if (student.getName().equalsIgnoreCase(name)) {
+                return student;
             }
         }
         return null;
     }
 
-  // Method to update student details	
-  public boolean updateStudent(long prn, String newName, String newDept, String newBatch, double newCgpa) {
+  // Method to update student details
+	public boolean updateStudent(long prn, String newName, String newDept, String newBatch, double newCgpa) {
         Student student = searchByPRN(prn);
         if (student != null) {
             student.setName(newName);
@@ -60,8 +61,8 @@ public class StudentOperations {
     }
 
 // Method to delete a student by PRN
-  public boolean deleteStudent(long prn) {
-         return students.removeIf(student -> student.getPrn() == prn);
+	public boolean deleteStudent(long prn) {
+        return students.removeIf(student -> student.getPrn() == prn);
     }
-}	
+}
 
