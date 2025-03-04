@@ -39,7 +39,7 @@ public class Main {
                     operations.displayStudents();
                     break;
 
-                 case 3:
+                 case 3:   // Search by PRN
                      System.out.print("Enter PRN to search: ");
                      Student foundByPRN = operations.searchByPRN(scanner.nextLong());
                      if (foundByPRN != null) {
