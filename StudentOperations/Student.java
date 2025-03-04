@@ -20,12 +20,12 @@ public class Student {
         this.name = name; 
     }
 
-    public long getPRN() {
-        return prn;
+    public long getPrn() { 
+        return prn; 
     }
-
-    public void setPRN(int prn) {
-        this.prn = prn;
+    
+    public void setPrn(long prn) { 
+        this.prn = prn; 
     }
 
     public String getDept() {
