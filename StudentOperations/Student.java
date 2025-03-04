@@ -16,43 +16,42 @@ public class Student {
     }
 
     // Getter and setter methods for student attributes
-    public String getName() { 
-        return name; 
+    public String getName() {
+        return name;
     }
-    public void setName(String name) { 
-        this.name = name; 
-    }
-
-    public long getPrn() { 
-        return prn; 
-    }
-    
-    public void setPrn(long prn) { 
-        this.prn = prn; 
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getDept() { 
-        return dept; 
-    }
-    
-    public void setDept(String dept) { 
-        this.dept = dept; 
+    public long getPrn() {
+        return prn;
     }
 
-    public String getBatch() { 
-       return batch; 
-    }
-    
-    public void setBatch(String batch) { 
-        this.batch = batch; 
+    public void setPrn(long prn) {
+        this.prn = prn;
     }
 
-    public double getCgpa() { 
-        return cgpa; 
+    public String getDept() {
+        return dept;
     }
     
-    public void setCgpa(double cgpa) { 
-        this.cgpa = cgpa; 
+    public void setDept(String dept) {
+        this.dept = dept;
+    }
+    public String getBatch() {
+        return batch;
+    }
+    
+    public void setBatch(String batch) {
+        this.batch = batch;
+    }
+
+    public double getCgpa() {
+        return cgpa;
+    }
+    
+    public void setCgpa(double cgpa) {
+        this.cgpa = cgpa;
     }
 
     // Getter and setter methods for student attributes
