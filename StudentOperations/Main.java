@@ -18,3 +18,20 @@ public class Main {
 
             int choice = scanner.nextInt();
             scanner.nextLine(); 
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter Name: ");
+                    String name = scanner.nextLine();
+                    System.out.print("Enter PRN: ");
+                    long prn = scanner.nextLong();
+                    scanner.nextLine();
+                    System.out.print("Enter Department: ");
+                    String dept = scanner.nextLine();
+                    System.out.print("Enter Batch: ");
+                    String batch = scanner.nextLine();
+                    System.out.print("Enter CGPA: ");
+                    double cgpa = scanner.nextDouble();
+                    operations.addStudent(new Student(name, prn, dept, batch, cgpa));
+                    break;
+                
