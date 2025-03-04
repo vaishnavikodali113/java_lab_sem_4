@@ -50,5 +50,8 @@ public class StudentOperations {
         return false;
     }
 
-	
-}
+public boolean deleteStudent(long prn) {
+        return students.removeIf(student -> student.getPrn() == prn);
+    }
+}	
+
