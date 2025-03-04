@@ -46,6 +46,7 @@ public class StudentOperations {
         return null;
     }
 
+  // Method to update student details	
   public boolean updateStudent(long prn, String newName, String newDept, String newBatch, double newCgpa) {
         Student student = searchByPRN(prn);
         if (student != null) {
@@ -58,8 +59,9 @@ public class StudentOperations {
         return false;
     }
 
-public boolean deleteStudent(long prn) {
-        return students.removeIf(student -> student.getPrn() == prn);
+// Method to delete a student by PRN
+  public boolean deleteStudent(long prn) {
+         return students.removeIf(student -> student.getPrn() == prn);
     }
 }	
 
