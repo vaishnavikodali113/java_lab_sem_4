@@ -89,3 +89,9 @@ public class Main {
                          System.out.println("Student not found.");
                          break;
                     }
+
+                case 7:
+                    System.out.println("Exiting program.");
+                    scanner.close();
+                    return;
+
