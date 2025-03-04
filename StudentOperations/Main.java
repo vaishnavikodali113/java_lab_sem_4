@@ -79,3 +79,13 @@ public class Main {
                         System.out.println("Student not found.");
                         break;
                     }
+
+                case 6:
+                     System.out.print("Enter PRN to delete: ");
+                     if (operations.deleteStudent(scanner.nextLong())) {
+                        System.out.println("Student deleted successfully.");
+                     }
+                    else {
+                         System.out.println("Student not found.");
+                         break;
+                    }
