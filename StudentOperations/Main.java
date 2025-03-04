@@ -80,7 +80,7 @@ public class Main {
                         break;
                     }
 
-                case 6:
+                case 6:   // Delete student
                      System.out.print("Enter PRN to delete: ");
                      if (operations.deleteStudent(scanner.nextLong())) {
                         System.out.println("Student deleted successfully.");
@@ -90,7 +90,7 @@ public class Main {
                          break;
                     }
 
-                case 7:
+                case 7:   // Exit program
                     System.out.println("Exiting program.");
                     scanner.close();
                     return;
