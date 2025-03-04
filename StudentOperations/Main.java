@@ -60,7 +60,7 @@ public class Main {
                         break;
                     }
 
-                 case 5:
+                 case 5:   // Update student details
                      System.out.print("Enter PRN to update: ");
                      long updatePRN = scanner.nextLong();
                      scanner.nextLine();
