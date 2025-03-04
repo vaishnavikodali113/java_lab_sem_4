@@ -6,6 +6,7 @@ public class Student {
     private String batch;
     private double cgpa;
 
+    // Constructor to initialize student attributes
     public Student(String name, long prn, String dept, String batch, double cgpa) {
         this.name = name;
         this.prn = prn;
