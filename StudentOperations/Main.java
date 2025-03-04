@@ -20,7 +20,7 @@ public class Main {
             scanner.nextLine();  // Consume newline
 
             switch (choice) {
-                case 1:
+                case 1:  // Input details and add student
                     System.out.print("Enter Name: ");
                     String name = scanner.nextLine();
                     System.out.print("Enter PRN: ");
