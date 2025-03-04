@@ -55,6 +55,7 @@ public class Student {
         this.cgpa = cgpa; 
     }
 
+    // Getter and setter methods for student attributes
     public void display() {
         System.out.println("Name: " + name + ", PRN: " + prn + ", Department: " + dept + ", Batch: " + batch + ", CGPA: " + cgpa);
     }
