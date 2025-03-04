@@ -25,7 +25,8 @@ public class StudentOperations {
             student.display();
         }
     }
-   
+
+    // Method to search for a student by PRN
     public Student searchByPRN(long prn) {
         for (Student student : students) {
             if (student.getPrn() == prn) {
