@@ -36,12 +36,12 @@ public class Student {
         this.dept = dept; 
     }
 
-    public String getBatch() {
-        return Batch;
+    public String getBatch() { 
+       return batch; 
     }
-
-    public void setBatch(String Batch) {
-        this.Batch = Batch;
+    
+    public void setBatch(String batch) { 
+        this.batch = batch; 
     }
 
     public double getCGPA() {
