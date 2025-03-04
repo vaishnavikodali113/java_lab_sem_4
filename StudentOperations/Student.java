@@ -53,6 +53,6 @@ public class Student {
     }
 
     public void display() {
-        System.out.println("Name: " + name + ", PRN: " + prn+", Department: "+Dept+", Batch: "+Batch+", CGPA: "+CGPA);
+        System.out.println("Name: " + name + ", PRN: " + prn + ", Department: " + dept + ", Batch: " + batch + ", CGPA: " + cgpa);
     }
 }
