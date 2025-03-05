@@ -1,16 +1,8 @@
 import java.util.*;
 
-public class Main{
-	public static void main(String args[]){
-		Deck deck = new Deck();
-		System.out.println("************Creating Deck*************");
-		deck.createDeck();
-		System.out.println("************Deck Created************");
-		deck.displayDeck();
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Deck deck = new Deck();
 
-		deck.shuffleDeck();
-		deck.displayDeck();
-
-		deck.printTwoCards();
-	}
-}
+	
