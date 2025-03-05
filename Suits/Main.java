@@ -51,6 +51,8 @@ public class Main {
                     deck.findCard(rank, suit);
                     break;
 			     
-
+  		case 6:
+                    deck.dealCard();
+                    break;
 
 		
