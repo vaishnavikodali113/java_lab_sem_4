@@ -26,11 +26,13 @@ public class Deck{
         }
     }
 
-	public void shuffleDeck(){
-		System.out.println("Shuffling Deck");
-		Collections.shuffle(deck);
-	}
-
+	public void printCard(int index) {
+        if (index >= 0 && index < deck.size()) {
+            System.out.println("Card at index " + index + ": " + deck.get(index));
+        } else {
+            System.out.println("Invalid index.");
+        }
+    }
 	public void printTwoCards(){
 		if (deck.size() >= 2) {
 			System.out.println("Top 2 cards: ");
