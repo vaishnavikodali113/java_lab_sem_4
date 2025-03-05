@@ -33,14 +33,12 @@ public class Deck{
             System.out.println("Invalid index.");
         }
     }
-	public void printTwoCards(){
-		if (deck.size() >= 2) {
-			System.out.println("Top 2 cards: ");
-			for (int i = 0; i < 2; i++){
-			System.out.println(deck.get(i));
-			}
-		} else {
-			System.out.println("Deck has less than 2 cards.");
-		}
-	}
+	public void compareCard(String rank) {
+        System.out.println("Cards with the rank: " + rank);
+        for (Card card : deck) {
+            if (card.rank.equalsIgnoreCase(rank)) {
+                System.out.println(card);
+            }
+        }
+    }
 }
