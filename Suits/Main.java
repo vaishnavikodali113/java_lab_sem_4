@@ -25,7 +25,13 @@ public class Main {
                     deck.printDeck();
                     break;
 
+		case 2:
+                    System.out.print("Enter index of card (0-51): ");
+                    int index = scanner.nextInt();
+                    deck.printCard(index);
+                    break;
 
+		
 
 
 
