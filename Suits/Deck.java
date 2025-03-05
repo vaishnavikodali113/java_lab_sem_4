@@ -19,12 +19,12 @@ public class Deck{
         }
     }
 
-	public void displayDeck(){
-		System.out.println("________Deck_________");
-		for (Card card : deck){
-			System.out.println(card);
-		}
-	}
+	public void printDeck() {
+        System.out.println("Deck of Cards:");
+        for (Card card : deck) {
+            System.out.println(card);
+        }
+    }
 
 	public void shuffleDeck(){
 		System.out.println("Shuffling Deck");
