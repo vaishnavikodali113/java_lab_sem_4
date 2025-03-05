@@ -43,7 +43,14 @@ public class Main {
                     deck.compareCard(rank);
                     break;
 
-
+		case 5:
+                    System.out.print("Enter rank: ");
+                    rank = scanner.nextLine();
+                    System.out.print("Enter suit: ");
+                    suit = scanner.nextLine();
+                    deck.findCard(rank, suit);
+                    break;
+			     
 
 
 		
