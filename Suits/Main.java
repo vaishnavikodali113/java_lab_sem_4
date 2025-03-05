@@ -55,4 +55,6 @@ public class Main {
                     deck.dealCard();
                     break;
 
-		
+		case 7:
+                    deck.shuffleDeck();
+                    break;
