@@ -58,3 +58,8 @@ public class Main {
 		case 7:
                     deck.shuffleDeck();
                     break;
+
+		case 8:
+                    System.out.println("Exiting...");
+                    scanner.close();
+                    return;
