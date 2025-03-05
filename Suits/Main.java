@@ -31,6 +31,12 @@ public class Main {
                     deck.printCard(index);
                     break;
 
+		case 3:
+                    System.out.print("Enter suit: ");
+                    String suit = scanner.nextLine();
+                    deck.sameCard(suit);
+                    break;
+
 		
 
 
