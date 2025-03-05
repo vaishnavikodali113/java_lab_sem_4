@@ -16,4 +16,7 @@ public class Main {
             System.out.println("7. Shuffle Deck");
             System.out.println("8. Exit");
             System.out.print("Choose an option: ");
+
+	    int choice = scanner.nextInt();
+            scanner.nextLine();
             
