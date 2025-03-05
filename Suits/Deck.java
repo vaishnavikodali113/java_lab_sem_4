@@ -57,4 +57,10 @@ public class Deck{
             System.out.println(deck.get(i));
         }
     }
+	public void shuffleDeck() {
+        System.out.println("Shuffling the deck...");
+        Collections.shuffle(deck);
+        System.out.println("Deck shuffled.");
+    }
 }
+
