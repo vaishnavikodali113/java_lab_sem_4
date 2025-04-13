@@ -102,4 +102,11 @@ public class Main {
                         System.out.println("Square Root: " + squareRoot(num1));
                         break;
 
+                    case 8:
+                        System.out.println("Exiting Calculator. Goodbye!");
+                        running = false;
+                        break;
+
+                    
+
 
