@@ -160,5 +160,30 @@ public class Main {
         }
     }
 
+    static void deleteStudent() {
+        try {
+            System.out.print("Enter PRN of student to delete: ");
+            String prn = sc.nextLine();
+
+            Student toDelete = null;
+            for (Student s : students) {
+                if (s.getPrn().equalsIgnoreCase(prn)) {
+                    toDelete = s;
+                    break;
+                }
+            }
+
+            if (toDelete == null) throw new StudentNotFoundException("Student with PRN not found.");
+
+            students.remove(toDelete);
+            System.out.println("Student deleted successfully.");
+
+        } catch (StudentNotFoundException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+}
+
+
 
         
