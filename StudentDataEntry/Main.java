@@ -71,3 +71,7 @@ public class Main {
             for (Student s : students) {
                 System.out.println(s);
             }
+        } catch (EmptyListException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
