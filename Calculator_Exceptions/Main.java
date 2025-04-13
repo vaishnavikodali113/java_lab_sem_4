@@ -63,3 +63,10 @@ public class Main {
                         System.out.println("Result: " + add(num1, num2));
                         break;
 
+                     case 2:
+                        System.out.print("Enter two numbers: ");
+                        num1 = scanner.nextInt();
+                        num2 = scanner.nextInt();
+                        System.out.println("Result: " + subtract(num1, num2));
+                        break;
+
