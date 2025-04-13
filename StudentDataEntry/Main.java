@@ -43,3 +43,12 @@ public class Main {
                     throw new DuplicatePRNException("Student with this PRN already exists.");
                 }
             }
+
+            System.out.print("Enter Name: ");
+            String name = sc.nextLine();
+            System.out.print("Enter Age: ");
+            int age = Integer.parseInt(sc.nextLine());
+
+            if (age <= 0 || name.isBlank() || prn.isBlank()) {
+                throw new InvalidDataException("Invalid input. Fields cannot be empty or negative.");
+            }
