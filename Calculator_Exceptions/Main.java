@@ -29,4 +29,9 @@ public class Main {
         return a * a * a;
     }
 
+    public static double squareRoot(int a) {
+        if (a < 0) throw new IllegalArgumentException("Cannot take square root of negative number.");
+        return Math.sqrt(a);
+    }
+
 
