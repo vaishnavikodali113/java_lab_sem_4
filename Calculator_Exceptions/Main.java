@@ -77,4 +77,19 @@ public class Main {
                         System.out.println("Result: " + multiply(num1, num2));
                         break;
 
+                    case 4:
+                        System.out.print("Enter two numbers: ");
+                        num1 = scanner.nextInt();
+                        num2 = scanner.nextInt();
+                        System.out.println("Result: " + divide(num1, num2));
+                        break;
+
+                    case 5:
+                        System.out.print("Enter a number: ");
+                        num1 = scanner.nextInt();
+                        System.out.println("Square: " + square(num1));
+                        break;
+
+                    
+
 
