@@ -32,4 +32,14 @@ public class Main {
         }
     }
 
-    
+    static void addStudent() {
+        try {
+            System.out.print("Enter PRN: ");
+            String prn = sc.nextLine();
+
+            // Check for duplicate PRN
+            for (Student s : students) {
+                if (s.getPrn().equalsIgnoreCase(prn)) {
+                    throw new DuplicatePRNException("Student with this PRN already exists.");
+                }
+            }
