@@ -8,3 +8,16 @@ public class Student {
         this.prn = prn;
         this.age = age;
     }
+
+    // Getters & Setters
+    public String getName() { 
+        return name; 
+    }
+    public String getPrn() { 
+        return prn; 
+    }
+    public int getAge() { 
+        return age; 
+    }
+
+    
