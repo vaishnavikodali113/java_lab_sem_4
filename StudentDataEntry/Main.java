@@ -19,3 +19,17 @@ public class Main {
             System.out.print("Choose an option: ");
 
             int choice = Integer.parseInt(sc.nextLine());
+
+            switch (choice) {
+                case 1 -> addStudent();
+                case 2 -> displayStudents();
+                case 3 -> searchStudent();
+                case 4 -> updateStudent();
+                case 5 -> deleteStudent();
+                case 6 -> running = false;
+                default -> System.out.println("Invalid option.");
+            }
+        }
+    }
+
+    
