@@ -98,4 +98,17 @@ public class Main {
                     if (!found) throw new StudentNotFoundException("Student with PRN not found.");
                 }
 
+                case 2 -> {
+                    System.out.print("Enter Name: ");
+                    String name = sc.nextLine();
+                    boolean found = false;
+                    for (Student s : students) {
+                        if (s.getName().equalsIgnoreCase(name)) {
+                            System.out.println("Found: " + s);
+                            found = true;
+                        }
+                    }
+                    if (!found) throw new StudentNotFoundException("Student with name not found.");
+                }
+
 
