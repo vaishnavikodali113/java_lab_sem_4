@@ -128,3 +128,17 @@ public class Main {
         }
     }
 
+    static void updateStudent() {
+        try {
+            System.out.print("Enter PRN of student to update: ");
+            String prn = sc.nextLine();
+            Student target = null;
+
+            for (Student s : students) {
+                if (s.getPrn().equalsIgnoreCase(prn)) {
+                    target = s;
+                    break;
+                }
+            }
+
+        
