@@ -75,3 +75,11 @@ public class Main {
             System.out.println("Error: " + e.getMessage());
         }
     }
+
+    static void searchStudent() {
+        try {
+            if (students.isEmpty()) throw new EmptyListException("Student list is empty.");
+
+            System.out.println("Search by: 1) PRN  2) Name  3) Position");
+            int opt = Integer.parseInt(sc.nextLine());
+
