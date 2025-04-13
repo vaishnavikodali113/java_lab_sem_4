@@ -117,5 +117,8 @@ public class Main {
                 System.out.println("Error: " + e.getMessage());
             }
         }
+         scanner.close();
+    }
+}
 
 
