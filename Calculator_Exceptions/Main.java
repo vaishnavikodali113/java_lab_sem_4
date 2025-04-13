@@ -107,6 +107,8 @@ public class Main {
                         running = false;
                         break;
 
-                    
+                    default:
+                        System.out.println("Invalid choice. Try again.");
+                }
 
 
