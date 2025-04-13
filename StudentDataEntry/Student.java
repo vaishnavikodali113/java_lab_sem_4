@@ -20,4 +20,9 @@ public class Student {
         return age; 
     }
 
+    public void setName(String name) { this.name = name; }
+    public void setPrn(String prn) { this.prn = prn; }
+    public void setAge(int age) { this.age = age; }
+
+
     
