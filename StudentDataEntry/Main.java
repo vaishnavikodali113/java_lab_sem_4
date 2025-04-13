@@ -60,3 +60,14 @@ public class Main {
             System.out.println("Error: " + e.getMessage());
         }
     }
+
+    static void displayStudents() {
+        try {
+            if (students.isEmpty()) {
+                throw new EmptyListException("No student records available.");
+            }
+
+            System.out.println("\n--- Student List ---");
+            for (Student s : students) {
+                System.out.println(s);
+            }
