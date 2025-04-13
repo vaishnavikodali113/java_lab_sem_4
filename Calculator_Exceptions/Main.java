@@ -70,3 +70,11 @@ public class Main {
                         System.out.println("Result: " + subtract(num1, num2));
                         break;
 
+                    case 3:
+                        System.out.print("Enter two numbers: ");
+                        num1 = scanner.nextInt();
+                        num2 = scanner.nextInt();
+                        System.out.println("Result: " + multiply(num1, num2));
+                        break;
+
+
