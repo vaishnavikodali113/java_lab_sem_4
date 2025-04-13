@@ -90,6 +90,16 @@ public class Main {
                         System.out.println("Square: " + square(num1));
                         break;
 
-                    
+                    case 6:
+                        System.out.print("Enter a number: ");
+                        num1 = scanner.nextInt();
+                        System.out.println("Cube: " + cube(num1));
+                        break;
+
+                    case 7:
+                        System.out.print("Enter a number: ");
+                        num1 = scanner.nextInt();
+                        System.out.println("Square Root: " + squareRoot(num1));
+                        break;
 
 
