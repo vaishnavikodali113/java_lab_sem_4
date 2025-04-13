@@ -83,3 +83,19 @@ public class Main {
             System.out.println("Search by: 1) PRN  2) Name  3) Position");
             int opt = Integer.parseInt(sc.nextLine());
 
+            switch (opt) {
+                case 1 -> {
+                    System.out.print("Enter PRN: ");
+                    String prn = sc.nextLine();
+                    boolean found = false;
+                    for (Student s : students) {
+                        if (s.getPrn().equalsIgnoreCase(prn)) {
+                            System.out.println("Found: " + s);
+                            found = true;
+                            break;
+                        }
+                    }
+                    if (!found) throw new StudentNotFoundException("Student with PRN not found.");
+                }
+
+
