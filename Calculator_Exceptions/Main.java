@@ -110,5 +110,12 @@ public class Main {
                     default:
                         System.out.println("Invalid choice. Try again.");
                 }
+             } catch (InputMismatchException e) {
+                System.out.println("Invalid input! Please enter numbers only.");
+                scanner.nextLine(); // clear buffer
+            } catch (ArithmeticException | IllegalArgumentException e) {
+                System.out.println("Error: " + e.getMessage());
+            }
+        }
 
 
