@@ -111,4 +111,20 @@ public class Main {
                     if (!found) throw new StudentNotFoundException("Student with name not found.");
                 }
 
+                case 3 -> {
+                    System.out.print("Enter Position (0 to " + (students.size() - 1) + "): ");
+                    int pos = Integer.parseInt(sc.nextLine());
+                    if (pos < 0 || pos >= students.size()) {
+                        throw new PositionOutOfRangeException("Position out of range.");
+                    }
+                    System.out.println("Found: " + students.get(pos));
+                }
+
+                default -> System.out.println("Invalid option.");
+            }
+
+        } catch (EmptyListException | StudentNotFoundException | PositionOutOfRangeException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
 
