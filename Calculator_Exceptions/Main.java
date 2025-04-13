@@ -49,3 +49,17 @@ public class Main {
             System.out.println("7. Square Root");
             System.out.println("8. Exit");
 
+            try {
+                System.out.print("Choose an operation (1-8): ");
+                int choice = scanner.nextInt();
+
+                int num1 = 0, num2 = 0;
+
+                switch (choice) {
+                    case 1:
+                        System.out.print("Enter two numbers: ");
+                        num1 = scanner.nextInt();
+                        num2 = scanner.nextInt();
+                        System.out.println("Result: " + add(num1, num2));
+                        break;
+
