@@ -27,3 +27,9 @@ class PositionOutOfRangeException extends Exception {
         super(message);
     }
 }
+
+class UpdateFailureException extends Exception {
+    public UpdateFailureException(String message) {
+        super(message);
+    }
+}
