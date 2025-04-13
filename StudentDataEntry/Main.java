@@ -52,3 +52,11 @@ public class Main {
             if (age <= 0 || name.isBlank() || prn.isBlank()) {
                 throw new InvalidDataException("Invalid input. Fields cannot be empty or negative.");
             }
+
+            students.add(new Student(name, prn, age));
+            System.out.println("Student added successfully.");
+
+        } catch (DuplicatePRNException | InvalidDataException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
