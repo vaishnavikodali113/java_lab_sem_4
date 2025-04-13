@@ -20,9 +20,18 @@ public class Student {
         return age; 
     }
 
-    public void setName(String name) { this.name = name; }
-    public void setPrn(String prn) { this.prn = prn; }
-    public void setAge(int age) { this.age = age; }
+    public void setName(String name) { 
+        this.name = name; 
+    }
+    public void setPrn(String prn) { 
+        this.prn = prn; 
+    }
+    public void setAge(int age) { 
+        this.age = age; 
+    }
 
-
-    
+    @Override
+    public String toString() {
+        return "Name: " + name + ", PRN: " + prn + ", Age: " + age;
+    }
+}
