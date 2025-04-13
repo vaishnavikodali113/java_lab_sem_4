@@ -20,5 +20,11 @@ public class Main {
         if (b == 0) throw new ArithmeticException("Cannot divide by zero.");
         return a / b;
     }
+    
+    public static int square(int a) {
+        return a * a;
+    }
 
     
+
+
