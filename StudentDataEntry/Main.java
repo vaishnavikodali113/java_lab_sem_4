@@ -155,6 +155,10 @@ public class Main {
             target.setAge(newAge);
 
             System.out.println("Student updated successfully.");
+            } catch (StudentNotFoundException | UpdateFailureException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
 
 
         
