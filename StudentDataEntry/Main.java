@@ -141,4 +141,20 @@ public class Main {
                 }
             }
 
+            if (target == null) throw new StudentNotFoundException("No student found with given PRN.");
+
+            System.out.print("Enter new name: ");
+            String newName = sc.nextLine();
+            System.out.print("Enter new age: ");
+            int newAge = Integer.parseInt(sc.nextLine());
+
+            if (newName.isBlank() || newAge <= 0)
+                throw new UpdateFailureException("Invalid update data.");
+
+            target.setName(newName);
+            target.setAge(newAge);
+
+            System.out.println("Student updated successfully.");
+
+
         
