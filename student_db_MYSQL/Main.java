@@ -132,4 +132,14 @@ public class Main {
         } catch (SQLException e) {
             System.out.println("Error searching: " + e.getMessage());
         }
-    }   
+    }
+
+    static void updateStudent(Connection conn) {
+        try {
+            System.out.print("Enter PRN of student to update: ");
+            String prn = sc.nextLine();
+
+            System.out.print("Enter new Name: ");
+            String name = sc.nextLine();
+            System.out.print("Enter new Age: ");
+            int age = Integer.parseInt(sc.nextLine());
