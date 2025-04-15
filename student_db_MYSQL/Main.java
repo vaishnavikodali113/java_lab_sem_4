@@ -110,4 +110,10 @@ public class Main {
                     stmt = conn.prepareStatement(sql);
                     stmt.setInt(1, id);
                 }
+                default -> {
+                    System.out.println("Invalid option.");
+                    return;
+                }
+            }
+            
                 
