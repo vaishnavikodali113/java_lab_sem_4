@@ -143,3 +143,20 @@ public class Main {
             String name = sc.nextLine();
             System.out.print("Enter new Age: ");
             int age = Integer.parseInt(sc.nextLine());
+
+            String sql = "UPDATE students SET name = ?, age = ? WHERE prn = ?";
+            try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+                stmt.setString(1, name);
+                stmt.setInt(2, age);
+                stmt.setString(3, prn);
+
+                int rows = stmt.executeUpdate();
+                if (rows > 0) System.out.println("Student updated successfully.");
+                else System.out.println("No student found with given PRN.");
+            }
+        } catch (SQLException e) {
+            System.out.println("Error updating student: " + e.getMessage());
+        }
+    }
+
+    
