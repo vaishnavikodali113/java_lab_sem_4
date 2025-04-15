@@ -23,3 +23,18 @@ public class Main {
                 System.out.print("Choose an option: ");
 
                 int choice = Integer.parseInt(sc.nextLine());
+
+                switch (choice) {
+                    case 1 -> addStudent(conn);
+                    case 2 -> displayStudents(conn);
+                    case 3 -> searchStudent(conn);
+                    case 4 -> updateStudent(conn);
+                    case 5 -> deleteStudent(conn);
+                    case 6 -> running = false;
+                    default -> System.out.println("Invalid option.");
+                }
+            }
+        } catch (SQLException e) {
+            System.out.println("Database Error: " + e.getMessage());
+        }
+    }
