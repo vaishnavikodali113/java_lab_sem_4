@@ -96,3 +96,11 @@ public class Main {
                     stmt = conn.prepareStatement(sql);
                     stmt.setString(1, prn);
                 }
+
+                case 2 -> {
+                    System.out.print("Enter Name: ");
+                    String name = sc.nextLine();
+                    sql = "SELECT * FROM students WHERE name = ?";
+                    stmt = conn.prepareStatement(sql);
+                    stmt.setString(1, name);
+                }
