@@ -38,3 +38,12 @@ public class Main {
             System.out.println("Database Error: " + e.getMessage());
         }
     }
+
+    static void addStudent(Connection conn) {
+        try {
+            System.out.print("Enter PRN: ");
+            String prn = sc.nextLine();
+            System.out.print("Enter Name: ");
+            String name = sc.nextLine();
+            System.out.print("Enter Age: ");
+            int age = Integer.parseInt(sc.nextLine());
