@@ -47,3 +47,13 @@ public class Main {
             String name = sc.nextLine();
             System.out.print("Enter Age: ");
             int age = Integer.parseInt(sc.nextLine());
+
+            String sql = "INSERT INTO students (prn, name, age) VALUES (?, ?, ?)";
+            try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+                stmt.setString(1, prn);
+                stmt.setString(2, name);
+                stmt.setInt(3, age);
+                stmt.executeUpdate();
+                System.out.println("Student added successfully.");
+            }
+        }
