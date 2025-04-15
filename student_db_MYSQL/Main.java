@@ -56,4 +56,9 @@ public class Main {
                 stmt.executeUpdate();
                 System.out.println("Student added successfully.");
             }
+        } catch (SQLIntegrityConstraintViolationException e) {
+            System.out.println("Student with this PRN already exists.");
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
         }
+    }
