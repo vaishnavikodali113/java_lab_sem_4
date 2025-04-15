@@ -96,7 +96,6 @@ public class Main {
                     stmt = conn.prepareStatement(sql);
                     stmt.setString(1, prn);
                 }
-
                 case 2 -> {
                     System.out.print("Enter Name: ");
                     String name = sc.nextLine();
@@ -104,3 +103,11 @@ public class Main {
                     stmt = conn.prepareStatement(sql);
                     stmt.setString(1, name);
                 }
+                case 3 -> {
+                    System.out.print("Enter ID: ");
+                    int id = Integer.parseInt(sc.nextLine());
+                    sql = "SELECT * FROM students WHERE id = ?";
+                    stmt = conn.prepareStatement(sql);
+                    stmt.setInt(1, id);
+                }
+                
