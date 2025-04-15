@@ -80,3 +80,19 @@ public class Main {
             System.out.println("Error displaying students: " + e.getMessage());
         }
     }
+
+    static void searchStudent(Connection conn) {
+        System.out.println("Search by: 1) PRN  2) Name  3) Position (ID)");
+        int choice = Integer.parseInt(sc.nextLine());
+        String sql = "";
+        PreparedStatement stmt = null;
+
+        try {
+            switch (choice) {
+                case 1 -> {
+                    System.out.print("Enter PRN: ");
+                    String prn = sc.nextLine();
+                    sql = "SELECT * FROM students WHERE prn = ?";
+                    stmt = conn.prepareStatement(sql);
+                    stmt.setString(1, prn);
+                }
