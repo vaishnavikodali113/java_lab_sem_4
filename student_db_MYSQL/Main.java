@@ -62,3 +62,21 @@ public class Main {
             System.out.println("Error: " + e.getMessage());
         }
     }
+
+    static void displayStudents(Connection conn) {
+        String sql = "SELECT * FROM students";
+        try (Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(sql)) {
+
+            boolean hasRows = false;
+            System.out.println("\n--- Student List ---");
+            while (rs.next()) {
+                hasRows = true;
+                System.out.printf("ID: %d | PRN: %s | Name: %s | Age: %d\n",
+                        rs.getInt("id"), rs.getString("prn"), rs.getString("name"), rs.getInt("age"));
+            }
+            if (!hasRows) System.out.println("No student records found.");
+        } catch (SQLException e) {
+            System.out.println("Error displaying students: " + e.getMessage());
+        }
+    }
