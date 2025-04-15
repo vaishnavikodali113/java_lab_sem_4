@@ -116,4 +116,20 @@ public class Main {
                 }
             }
             
-                
+            try (ResultSet rs = stmt.executeQuery()) {
+                boolean found = false;
+                while (rs.next()) {
+                    found = true;
+                    System.out.printf("ID: %d | PRN: %s | Name: %s | Age: %d\n",
+                            rs.getInt("id"),
+                            rs.getString("prn"),
+                            rs.getString("name"),
+                            rs.getInt("age"));
+                }
+                if (!found) System.out.println("No student found.");
+            }
+
+        } catch (SQLException e) {
+            System.out.println("Error searching: " + e.getMessage());
+        }
+    }   
