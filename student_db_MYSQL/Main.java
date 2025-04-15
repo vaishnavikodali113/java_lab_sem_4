@@ -159,4 +159,23 @@ public class Main {
         }
     }
 
+    static void deleteStudent(Connection conn) {
+        try {
+            System.out.print("Enter PRN of student to delete: ");
+            String prn = sc.nextLine();
+
+            String sql = "DELETE FROM students WHERE prn = ?";
+            try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+                stmt.setString(1, prn);
+                int rows = stmt.executeUpdate();
+                if (rows > 0) System.out.println("Student deleted successfully.");
+                else System.out.println("No student found with given PRN.");
+            }
+        } catch (SQLException e) {
+            System.out.println("Error deleting student: " + e.getMessage());
+        }
+    }
+}
+
+
     
